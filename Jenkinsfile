@@ -5,14 +5,14 @@ pipeline {
         stage('GetCode') {
             steps {
                 // Fetch code from the GitHub repository
-                git url: 'https://github.com/nenavathsrinu/maven-web-app.git'
+                git url: 'https://github.com/ganeshpandu/maven-web-app.git'
             }
         }
         
         stage('Git Pull') {
             steps {
                 // Pull code from the Git repository
-                git branch: 'master', credentialsId: 'your_git_credentials', url: 'https://github.com/nenavathsrinu/maven-web-app.git'
+                git branch: 'master', credentialsId: 'your_git_credentials', url: 'https://github.com/ganeshpandu/maven-web-app.git'
             }
         }
         
